@@ -1,0 +1,823 @@
+html, body
+{
+    height: 100%;
+}
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background: #181818;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 12pt;
+    font-weight: 200;
+    color: #FFF;
+}
+
+
+h1, h2, h3
+{
+    margin: 0;
+    padding: 0;
+}
+
+p, ol, ul
+{
+    margin-top: 0;
+}
+
+ol, ul
+{
+    padding: 0;
+    list-style: none;
+}
+
+p
+{
+    line-height: 180%;
+}
+
+strong
+{
+}
+
+a
+{
+    color: #ee0000;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+.container
+{
+    overflow: hidden;
+    margin: 0em auto;
+    width: 1200px;
+}
+
+/*********************************************************************************/
+/* Image Style                                                                   */
+/*********************************************************************************/
+
+.image
+{
+    display: inline-block;
+}
+
+.image img
+{
+    display: block;
+    width: 100%;
+}
+
+.image-full
+{
+    display: block;
+    width: 100%;
+    margin: 0 0 2em 0;
+}
+
+.image-left
+{
+    float: left;
+    margin: 0 2em 2em 0;
+}
+
+.image-centered
+{
+    display: block;
+    margin: 0 0 2em 0;
+}
+
+.image-centered img
+{
+    margin: 0 auto;
+    width: auto;
+}
+
+/*********************************************************************************/
+/* List Styles                                                                   */
+/*********************************************************************************/
+
+ul.style1
+{
+}
+
+ul.actions
+{
+}
+
+ul.actions li
+{
+    display: inline-block;
+    padding: 0em 0.50em;
+}
+
+
+/*********************************************************************************/
+/* Social Icon Styles                                                            */
+/*********************************************************************************/
+
+ul.contact
+{
+    margin: 0;
+    padding: 2em 0em 0em 0em;
+    list-style: none;
+}
+
+ul.contact li
+{
+    display: inline-block;
+    padding: 0em 0.30em;
+    font-size: 1em;
+}
+
+ul.contact li span
+{
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.contact li a
+{
+    color: #FFF;
+}
+
+ul.contact li a:before
+{
+    display: inline-block;
+    background: #3f3f3f;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+ul.contact li a.icon-twitter:before { background: #2DAAE4; }
+ul.contact li a.icon-facebook:before { background: #39599F; }
+ul.contact li a.icon-dribbble:before { background: #C4376B;	}
+ul.contact li a.icon-tumblr:before { background: #31516A; }
+ul.contact li a.icon-rss:before { background: #F2600B; }
+
+/*********************************************************************************/
+/* Button Style                                                                  */
+/*********************************************************************************/
+
+.button
+{
+    display: inline-block;
+    padding: 1em 2em 1em 2em;
+    letter-spacing: 0.10em;
+    margin-top: 2em;
+    padding: 1.40em 3em;
+    background: #8E2323;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1em;
+    color: #FFF;
+}
+
+.button-alt
+{
+    padding: 1em 2em;
+    border-color: rgba(0,0,0,.8);
+    color: #FFF;
+}
+
+/*********************************************************************************/
+/* 4-column                                                                      */
+/*********************************************************************************/
+
+.box1,
+.box2,
+.box3,
+.box4
+{
+    width: 235px;
+}
+
+.box1,
+.box2,
+.box3
+{
+    float: left;
+    margin-right: 20px;
+}
+
+.box4
+{
+    float: right;
+}
+
+/*********************************************************************************/
+/* 3-column                                                                      */
+/*********************************************************************************/
+
+.boxA,
+.boxB,
+.boxC
+{
+    width: 384px;
+}
+
+.boxA,
+.boxB
+{
+    float: left;
+    margin-right: 20px;
+}
+
+.boxC
+{
+    float: right;
+}
+
+/*********************************************************************************/
+/* 2-column                                                                      */
+/*********************************************************************************/
+
+.tbox1,
+.tbox2
+{
+    width: 575px;
+}
+
+.tbox1
+{
+    float: left;
+}
+
+.tbox2
+{
+    float: right;
+}
+
+
+/*********************************************************************************/
+/* Heading Titles                                                                */
+/*********************************************************************************/
+
+.title
+{
+    margin-bottom: 3em;
+}
+
+.title h2
+{
+    font-size: 2.7em;
+}
+
+.title .byline
+{
+    font-size: 1.3em;
+    color: rgba(255,255,255,0.60);
+}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+#wrapper
+{
+    position: relative;
+    padding: 5em 0em 7em 0em;
+    background: #FFF;
+}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+#header-wrapper
+{
+    position: relative;
+    padding: 5em 0em 7em 0em;
+    background: #111111  url(../img/travel2.jpg)no-repeat center;
+    background-size: cover;
+}
+
+#header
+{
+    position: relative;
+    padding: 5em 0em;
+}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+#logo
+{
+    position: absolute;
+    left: 0;
+}
+
+#logo h1
+{
+    font-size: 2.6em;
+    color: #79C255;
+}
+
+#logo a
+{
+    text-decoration: none;
+    color: rgba(255,255,255,1);
+}
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+#menu
+{
+    position: absolute;
+    top: 4.5em;
+    right: 0;
+}
+
+#menu ul
+{
+    display: inline-block;
+}
+
+#menu li
+{
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+#menu li a, #menu li span
+{
+    padding: 1em 1.5em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: rgba(255,255,255,0.90);
+    border-bottom: 1px whitesmoke solid;
+}
+
+#menu li:hover a, #menu li.active a, #menu li.active span
+{
+    background: #8E2323;
+    border-radius: 6px;
+    color: rgba(255,255,255,1);
+}
+
+#menu .active a
+{
+    background: #8E2323;
+    border-radius: 6px;
+    color: rgba(255,255,255,1);
+}
+
+#menu .icon
+{
+}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+#banner
+{
+    padding-top: 10em;
+    text-align: center;
+}
+
+#banner .title h2
+{
+    font-size: 4em;
+}
+
+#banner .title .byline
+{
+    font-size: 2em;
+}
+
+#banner .button
+{
+    margin-top: 2em;
+    padding: 1.40em 3em;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1em;
+
+}
+
+.banner
+{
+    margin-bottom: 5em;
+}
+
+/*********************************************************************************/
+/* Page                                                                          */
+/*********************************************************************************/
+
+#page
+{
+}
+
+/*********************************************************************************/
+/* Content                                                                       */
+/*********************************************************************************/
+
+#content
+{
+}
+
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+
+#sidebar
+{
+}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+#footer
+{
+}
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+#copyright
+{
+    overflow: hidden;
+    padding: 5em 0em;
+    border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+#copyright p
+{
+    text-align: center;
+    font-size: 1em;
+    color: rgba(255,255,255,0.3);
+}
+
+#copyright a
+{
+    text-decoration: none;
+    color: rgba(255,255,255,0.6);
+}
+
+
+/*********************************************************************************/
+/* Welcome                                                                       */
+/*********************************************************************************/
+
+#welcome
+{
+    position: relative;
+    padding: 7em 0em 7em 0em;
+    background: #8E2323;
+    background-size: cover;
+    text-align: center;
+}
+
+#welcome .container
+{
+    width: 1000px;
+    padding: 0px 100px;
+    color: rgba(255,255,255,0.8);
+}
+
+#welcome a
+{
+    color: rgba(255,255,255,1);
+}
+
+#welcome .button
+{
+    background: #FFF;
+    color: #8E2323;
+}
+
+
+/*********************************************************************************/
+/* Extra                                                                         */
+/*********************************************************************************/
+
+#three-column
+{
+    text-align: center;
+    color: rgba(0,0,0,0.6);
+}
+
+#three-column .fa
+{
+    display: block;
+    padding: 1em 0em;
+    color: rgba(0,0,0,1);
+    font-size: 2em;
+}
+
+#three-column .title h2
+{
+    font-weight: bold;
+    color: rgba(0,0,0,0.8);
+}
+
+#three-column .title .byline
+{
+    text-align: center;
+    color: rgba(0,0,0,.5);
+}
+
+
+
+/*********************************************************************************/
+/* For details table                                                      */
+/*********************************************************************************/
+table#detail {
+    width: 1000px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #8E2323;
+}
+
+table#detail a {
+    vertical-align: bottom;
+}
+
+#detail img {
+    width: 300px;
+    padding-top: 100px;
+    padding-left: 15px;
+}
+
+#detail td {
+    position: relative;
+    vertical-align: top;
+    padding: 2px 12px 15px 0px;
+    border-top: 5px solid #FFFFFF;
+    border-bottom: 5px solid #FFFFFF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#8E2323), to(#DB2929));
+    background: -moz-linear-gradient(top,  #8E2323,  #DB2929);
+    text-align: center;
+    border: 1px solid #FFFFFF;
+}
+
+#detail tr:nth-child(odd) {
+    background-color: #EED5D2;
+}
+
+#detail p {
+    padding: 3px;
+}
+
+#detail #button-group {
+    position: absolute;
+    bottom: 20px;
+}
+
+#detail #confirm-message {
+    position: absolute;
+    bottom: 20px;
+    color: white;
+}
+
+#detail .media-description {
+    max-height: 120px;
+    overflow: auto;
+}
+
+/*********************************************************************************/
+/* Index Table (the grid)                                                          */
+/*********************************************************************************/
+#main-header {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 56px;
+    text-transform: uppercase;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+
+.grid-container{
+    margin: 10px auto 10px auto;
+    width: 960px;
+}
+
+.row:before, 
+.row:after {
+    content:"";
+    display: table ;
+    clear:both;
+}
+
+.col {
+    float: left; 
+    min-height: 1px; 
+    padding: 10px; 
+    background-color: #8E2323;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.col:hover {
+    border: 1px solid #ff6600;
+}
+
+.col > p {
+    background-color: #fff; 
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    color: #333;
+    width: 250px;
+    height: 300px;
+}
+
+.col > p img {
+    width: 250px;
+    height: 210px;
+    border: none;
+}
+
+.col > p a {
+    text-decoration: none;
+}
+
+.col >p span {
+    margin-top: 2px;
+    display: inline-block;
+    padding-left: 3px;
+    padding-bottom: 2px;
+    font-size: 0.8em;
+    font-family: Veranda, Arial, Georgia;
+    font-weight: bold;
+    color: #555;
+}
+/* style for the search bar */
+#searchbar {
+    float: right;
+    margin-right: 95px;
+    border: #8E2323 1px solid;
+    background: #8E2323;
+    border-radius: 6px;
+
+}
+
+#searchbar input{
+    border: none;
+}
+
+#searchbar input[type="text"] {
+    width: 200px;
+    height: 30px;
+    padding-left: 8px;
+    font-size: 0.8em;
+    color: #444;
+}
+
+#searchbar input[type="text"]:focus {
+    outline: none;
+}
+
+#searchbar input[type="submit"]{
+    border-left: 1px solid #8E2323;
+    padding: 0;
+    width: 30px;
+    height: 19px;
+    margin: 2px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #8E2323;
+    color: white;
+}
+
+#searchbar input[type="submit"]:hover{
+    border-left: 1px solid #999;
+    background-color: #EED5D2;
+}
+
+#btnBack {
+    margin-bottom: 85px;
+}
+
+.backnav {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    vertical-align: bottom;
+}
+
+#cityName {
+    margin-top: 20px;
+}
+
+.searchTerms {
+    margin-left: 80px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.cityImg {
+    margin-bottom: 15px;
+    object-fit: fill;
+}
+
+/* styles for the suggestion div and the span that come with it*/
+#suggestionDiv {
+    position: absolute;
+    padding: 0;
+    margin-right: 96px;
+    right: -1px;
+    background-color: #8E2323;
+    width: 246px;
+    font-size: 0.85em;
+    z-index: 9999;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: 1px solid rgba(0,0,0,.15);
+    box-shadow: 2px 10px 12px 2px rgba(0,0,0,.175);
+}
+
+#suggestionDiv span {
+    display: block;
+    margin-right: 80px;
+    padding: 4px 3px 4px 10px;
+    cursor: default;
+    min-width: 178px;
+    white-space: nowrap;
+}
+
+#suggestionDiv span:hover {
+    background-color: #FDA939;
+    width: 233px;
+}
+
+/* styles for users */
+#signUp {
+    margin: 0 auto;
+    border: 5px white solid;
+    padding: 30px;
+}
+
+#b1 {
+    display: inline-block;
+    padding: .5em 1em .5em 1em;
+    letter-spacing: 0.10em;
+    margin-top: 2em;
+    padding: .5em 1.5em;
+    background: #8E2323;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1em;
+    color: #FFF;
+    margin: 0 auto;
+}
+
+#signup th {
+    text-align: left;
+}
+
+#signup {
+    margin-left: 40px;
+    text-align: left;
+}
+
+.centerText {
+    text-align: center;
+}
+
+#addImage {
+    margin: 0 auto;
+    text-align: center;
+    border: 5px white solid;
+    width: 400px;
+    padding: 10px;
+}
+
+#addImage input {
+    margin: 5px;
+}
+
+#hotelEdit {
+    position: relative;
+    bottom: 0;
+}
+
+#confirm-message {
+    text-align: center;
+}
+
+#addButton {
+    margin-right: 10px;
+}
