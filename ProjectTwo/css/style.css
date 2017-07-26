@@ -1,0 +1,85 @@
+li {
+    cursor: pointer;
+    margin: 3px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+#addPage {
+    display: flex;
+    flex-flow: column;
+}
+
+nav {
+    display: inline-block;
+    background-image: url('../img/postit1.png');
+    background-size: 300px, 300px;
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+}
+
+body {
+    background: url('../img/corkboard.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#container {
+    margin: 0 auto;
+    width: 1200px;
+    vertical-align: top;
+}
+
+nav li {
+    list-style: none;
+}
+
+.thoughtLink {
+    cursor: pointer;
+}
+
+#editPage {
+    display: flex;
+    flex-flow: column;
+    width: 400px;
+}
+
+.error {
+    color: red;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+input {
+    margin: 3px;
+}
+textarea {
+    margin: 3px;
+}
+
+#quickAdd {
+    display: flex;
+    flex-flow: column;
+}
+
+.page {
+    background-color: sandybrown;
+    margin-top: 20px;
+    width: 800px;
+}
+
+#listPage {
+    background-image: url('../img/postit.png');
+    background-color: inherit;
+    background-size: 400px, 400px;
+    padding: 35px;
+    height: 400px;
+    width: 400px;
+    font-size: 18px;
+    background-repeat: no-repeat;
+}
+
+

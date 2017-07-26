@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Two</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<h1>Life Event Journal</h1>
+
+<div id="container">
+    <nav>
+        <ul>
+            <li id="btnAddNew">Add New</li>
+            <li id="btnQuickAdd">Quick Event Add</li>
+            <li id="btnListAll">List All</li>
+            <li id="btnShowTop">Show Happiest Events</li>
+        </ul>
+    </nav>
+
+    <div id="content">
+
+        <div id="addPage" class="page">
+            <h2>Add a New Event</h2>
+
+            <div class="feedback"></div>
+            <div id="txtAddFeedback"></div>
+            <div id="addTitleError" class="error"></div>
+            <input placeholder="Title" id="txtTitle"/>
+            <div id="addDescError" class="error"></div>
+            <textarea placeholder="add your event here" id="txtThought"></textarea>
+            <span>Happiness Rating</span><input id="txtHappiness" type="range" max="7" min="1" step=".5">
+            <input placeholder="place,tags,here" id="txtTags"/>
+            <button id="btnAddThought">Add an Event</button>
+        </div>
+
+        <div id="editPage" class="page">
+            <h2>Edit Your Event</h2>
+
+            <div class="feedback"></div>
+            <div id="editTitleError" class="error"></div>
+            <input placeholder="Title" class="title" id="editTitle"/>
+            <div id="editDescError" class="error"></div>
+            <textarea placeholder="edit your event" class="description" id="editDesc"></textarea>
+            <span>Happiness Rating</span><input class="happiness" type="range" max="7" min="1" step=".5" />
+            <input placeholder="place,tags,here" class="tags" />
+            <button id="btnSubmitEdit">Complete Edit</button>
+        </div>
+
+        <div id="showPage" class="page" class="inline">
+            <h2 class="thoughtTitle"></h2>
+            <div class="thoughtDescription"></div>
+            <div class="thoughtDate"></div>
+
+        </div>
+
+        <div id="listPage" class="page" class="inline">
+            <h2>Event List</h2>
+            <div class="thoughts">
+            </div>
+
+        </div>
+
+        <div id="quickAdd" class="page" class="add">
+            <h2>Event Quick Add</h2>
+            <div id="quickAddConf"></div>
+            <div id="quickEventError"></div>
+            <input placeholder="Add an event" id="quickAddEvent" />
+            <input type="button" value="Add Event" id="addQuickThought"/>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

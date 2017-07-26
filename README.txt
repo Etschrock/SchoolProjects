@@ -1,0 +1,1 @@
+This is a respository which contains a few of my projects from school.
